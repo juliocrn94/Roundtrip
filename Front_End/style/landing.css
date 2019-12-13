@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+}
+
+.navbar {
+    padding: .8rem;
+    margin: auto;
+}
+
+.nav-link {
+    font-size: 1em !important;
+}
+
+.carousel-inner img {
+    width: 40%;
+    height: 40%;
+}
+
+.d-block w-100 {
+    width: 10%;
+}
+
+.btn-primary {
+    background-color: #a0d995;
+    border: 1px #a0d995;
+    color: black;
+}
+
+.btn-primary:hover {
+    background-color: #30af15;
+    border: 1px #30af15;
+}
+
+.jumbotron {
+    padding: 1rem;
+    border-radius: 0;
+}
+
+.padding {
+    padding-bottom: 2rem;
+}
+
+.btn-default {
+    background: #a0d995;
+}
+
+.welcome {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.welcome hr {
+    border-top: 2px solid #b4b4b4;
+    width: 75%;
+    margin-top: .3rem;
+    margin-bottom: 1rem;
+}
+
+#explanation {
+    padding-top: 20px;
+}
+
+#testimonios {
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.social a {
+    padding: 3rem;
+}
+
+footer {
+    background-color: #3f3f3f;
+    color: #d5d5d5;
+    padding-top: 2rem;
+}
+
+hr.light {
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: #d5d5d5;
+}
+
+hr.light-100 {
+    border-top: 1px solid #d5d5d5;
+    width: 100%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 992px) {
+    .social a {
+        font-size: 4em;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-caption {
+        top: 45%;
+    }
+    .carousel-caption h1 {
+        font-size: 350%;
+    }
+    .carousel-caption h3 {
+        font-size: 140%;
+        font-weight: 400%;
+        padding-bottom: .2rem;
+    }
+    .carousel-caption .btn {
+        font-size: 95%;
+        padding: 8px 14px;
+    }
+    .social a {
+        font-size: 2.5em;
+        padding: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption {
+        top: 40%;
+    }
+    .carousel-caption h1 {
+        font-size: 250%;
+    }
+    .carousel-caption h3 {
+        font-size: 110%;
+    }
+    .carousel-caption .btn {
+        font-size: 90%;
+        padding: 4px 4px;
+    }
+    .social a {
+        font-size: 2em;
+        padding: .7rem;
+    }
+}
+
+
+/*---Firefox Bug Fix --*/
+
+.carousel-item {
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+}
+
+
+/*--- Bootstrap Padding Fix --*/
+
+[class*="col-"] {
+    padding: 1rem;
+}
