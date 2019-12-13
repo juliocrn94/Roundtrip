@@ -1,0 +1,46 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+#header img {
+  width: 150px;
+}
+
+.bg-menu {
+  background-color: #f8f9fa;
+}
+
+#carousel {
+  position: relative;
+}
+#carousel .carousel-inner img {
+  max-height: 80vh;
+  object-fit: cover;
+  filter: saturate(100%);
+}
+#carousel .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  display: flex;
+  align-items: center;
+}
+#carousel .overlay img {
+  width: 100%;
+}
+
+.cust-grid {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.cust-grid-col {
+  float: none;
+}
+
+/*# sourceMappingURL=main.css.map */
