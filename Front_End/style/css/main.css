@@ -14,7 +14,7 @@ body {
   position: relative;
 }
 #carousel .carousel-inner img {
-  max-height: 80vh;
+  max-height: 90vh;
   object-fit: cover;
   filter: saturate(100%);
 }
@@ -29,8 +29,53 @@ body {
   display: flex;
   align-items: center;
 }
+#carousel .overlay .container {
+  font-size: 12px;
+}
+#carousel .overlay .container h2 {
+  font-size: 2em;
+}
 #carousel .overlay img {
   width: 100%;
+}
+
+.explore-grid {
+  font-size: 12px;
+}
+.explore-grid .container {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+.explore-grid .container h2 {
+  font-size: 2em;
+  color: #30af15;
+}
+.explore-grid .container h3 {
+  font-size: 1.5em;
+}
+.explore-grid .container h5 {
+  font-size: 1em;
+}
+.explore-grid .container p {
+  font-size: 0.7em;
+}
+.explore-grid .container .card-deck {
+  min-height: 40vh;
+  margin-bottom: 1px;
+}
+.explore-grid .container .card-deck .card {
+  height: inherit;
+  margin-right: 10px;
+  margin-left: 10px;
+  border: 0;
+}
+.explore-grid .container .card-deck .card img {
+  border-radius: 5px;
+}
+.card-img-top {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
 }
 
 .cust-grid {
@@ -41,6 +86,31 @@ body {
 
 .cust-grid-col {
   float: none;
+}
+
+.sec-color {
+  color: #a0d995 !important;
+}
+
+.main-color {
+  color: #30af15 !important;
+  font-size: 1.3em;
+}
+
+footer {
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2rem;
+}
+
+@media (min-width: 576px) {
+  .overlay .container {
+    font-size: 18px !important;
+  }
+
+  .explore-grid {
+    font-size: 18px !important;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

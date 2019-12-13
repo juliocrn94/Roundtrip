@@ -30,16 +30,19 @@ body {
 
 #carousel {
     .carousel-inner img {
-        max-height: 80vh;
+        max-height: 90vh;
         object-fit: cover;
         filter: saturate(100%);
     }
     .overlay {
         .container {
+            h2 {
+                font-size: 2em;
+            }
             // height: 100%;
             // top: 50%;
             // transform: translateY(50%);
-            
+            font-size: 12px;
         }
         img {
             width: 100%;
@@ -56,12 +59,117 @@ body {
     }
     position: relative;
 }
+
+.explore-grid {
+    .container {
+        h2 {
+            font-size: 2em;
+            color: $color_sec;
+        }
+        h3 {
+            font-size: 1.5em;
+        }
+        h5 {
+            font-size: 1em;
+        }
+        p {
+            font-size: .7em;
+        }
+        .card-deck {
+            .card {
+                img {
+                    border-radius: 5px;
+                }
+                .card-body{
+
+                }
+                height: inherit;
+                margin-right: 10px;
+                margin-left: 10px;
+                border: 0;
+            }
+            min-height: 40vh;
+            margin-bottom: 1px;
+        }
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+    font-size: 12px;
+}
+.card-img-top {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+}
+
 .cust-grid{
     display: flex;
     align-items: center;
     flex-flow:row wrap;
 }
-    
 .cust-grid-col{
     float:none;
 }
+.sec-color {
+    color: $color_main !important;
+}
+.main-color {
+    color: $color_sec !important;
+    font-size: 1.3em;
+}
+
+footer {
+    background-color: #3f3f3f;
+    color: #d5d5d5;
+    padding-top: 2rem;
+}
+
+@media (min-width: 576px) { 
+    .overlay .container {
+        font-size: 18px !important;
+    }
+    .explore-grid {
+        font-size: 18px !important;
+    }
+}
+
+
+
+// .scrollcards {
+//     background-color: green;
+//     overflow-x: auto;
+//     overflow-y: hidden;
+//     height: 50vh;
+//     white-space: nowrap;
+//     font-size: 16px;
+//     margin-right: .7em;
+// }
+  
+// ::-webkit-scrollbar {
+//     width: 0px;
+//     height: 0px;
+//     background: transparent;
+// }
+  
+// div.scrollcards .card-main {
+//     .card {
+//         img {
+//             width: 100%;
+//             height: 30vh;
+//         }
+//         .card-block {
+//             white-space: normal;
+//         }
+//         box-sizing: border-box;
+//         height: auto;
+//         width: auto;
+//         white-space: hidden;
+//     }
+//     display: inline-block;
+//     //padding: 14px;
+//     text-decoration: none;
+//     height: auto; 
+//     width: 20vw;
+//     height: 40vh;
+//     border: 1px black solid;
+// }
